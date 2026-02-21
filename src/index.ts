@@ -1,6 +1,7 @@
 import { appendFileSync, existsSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { createHash, generateKeyPairSync, sign, verify } from 'node:crypto';
+export * from './protocol.js';
 
 export interface CustodyEvent {
   sessionId: string;
